@@ -6,6 +6,7 @@ This project, **SoccerSense**, is a comprehensive soccer analytics platform that
 
 
 ## Data Sources
+Here I have used a variety of structured, semi-structured and unstructured data.
 #### Kaggle:https://www.kaggle.com/datasets/davidcariboo/player-scores
 #### Transfermarkt: https://www.transfermarkt.co.uk/
 #### Youtube: https://www.youtube.com/

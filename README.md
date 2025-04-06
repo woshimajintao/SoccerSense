@@ -6,7 +6,7 @@ This project, **SoccerSense**, is a comprehensive soccer analytics platform that
 
 
 ## Data Sources
-#### Kaggle:https://www.kaggle.com/datasets/davidcariboo/player-scores?select=transfers.csv
+#### Kaggle:https://www.kaggle.com/datasets/davidcariboo/player-scores
 #### Transfermarkt: https://www.transfermarkt.co.uk/
 #### Youtube: https://www.youtube.com/
 

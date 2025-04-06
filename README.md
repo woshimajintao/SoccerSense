@@ -24,14 +24,7 @@ To run the code for this project, you will need to install several Python packag
 ```
 
 ## Usage
-### Step 1: Setting Up Google Drive
-Mount your Google Drive to access the datasets and store processed files.
-```python
-from google.colab import drive
-drive.mount('/content/drive')
-```
-
-### Step 2: Setting Up Delta Lake
+### Step 1: Setting Up Delta Lake
 Initialize SparkSession with Delta Lake configuration.
 ```python
 from pyspark.sql import SparkSession
@@ -44,27 +37,27 @@ builder = SparkSession.builder.appName("SoccerSense") \
 spark = configure_spark_with_delta_pip(builder).getOrCreate()
 ```
 
-### Step 3: Installing Required Packages
+### Step 2: Installing Required Packages
 Make sure all the required packages are installed as listed above.
 
-### Step 4: Running Data Ingestion Scripts
+### Step 3: Running Data Ingestion Scripts
 Refer to the code files provided in the repository for data ingestion processes including:
 - Downloading YouTube videos using `yt-dlp`
 - Extracting comments via YouTube Data API
 - Downloading CSV data from Kaggle
 - Storing data in Delta Lake (Temporal and Persistent Landing Zones)
 
-### Step 5: Metadata Management
-Metadata for each dataset is extracted and stored as JSON files for better traceability.
+### Step 4: Metadata Management
+Metadata for each dataset is extracted and stored as JSON files like [this](https://drive.google.com/file/d/1-bpG7PXG4g9iOmyarzcFx6-lrkD2qp58/view?usp=sharing) for better traceability.
 
-### Step 6: Data Processing and Analysis
+### Step 5: Data Processing and Analysis
 Once all the data is stored, you can proceed with further processing and analysis using Spark DataFrames.
 
 ## Repository Link
 [GitHub Repository](https://github.com/woshimajintao/BDM-Project)
 
 ## Author
-**Jintao Ma** - Universitat Politècnica de Catalunya (UPC)
+**Jintao Ma** - Big Data Management and Analytics Master Program
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.

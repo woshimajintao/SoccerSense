@@ -1,23 +1,71 @@
-# SoccerSense
+# SoccerSense Project - Comprehensive Data Collection Framework
 
-This paper presents the SoccerSense project architecture, a com-
-prehensive soccer analytics platform that integrates diverse data
-sources, including structured CSV datasets, unstructured video
-data, and semi-structured JSON files. The primary objective
-is to address challenges in soccer analytics by providing auto-
-mated data ingestion, advanced AI-driven analysis, and real-
-time insights for coaches, analysts, and scouts.
-
+## Overview
+This project, **SoccerSense**, is a comprehensive soccer analytics platform that integrates multiple data sources, including structured CSV datasets, unstructured video data, and semi-structured JSON files. The primary goal is to address challenges in soccer analytics by providing automated data ingestion, advanced AI-driven analysis, and real-time insights for coaches, analysts, and scouts.
 ![image](https://github.com/user-attachments/assets/26124c78-6bf3-428d-91c1-f939ba7eb358)
 
-To achieve this, I employed Delta Lake for robust data stor-
-age and management, leveraging its ACID transactions, schema
-enforcement, and time-travel features. I also used Google Cloud
-Storage. The landing zone consists of two phases: the Tempo-
-ral Landing Zone for rapid data ingestion and initial process-
-ing, and the Persistent Landing Zone for long-term storage,
-versioning, and accessibility. Metadata management was in-
-tegrated throughout the pipeline to ensure data traceability and
-governance
+## Installation
+To run the code for this project, you will need to install several Python packages.
 
+### Required Packages
+- **PySpark** - For distributed data processing.
+- **Delta Lake** - To enable ACID transactions and schema enforcement with Spark.
+- **yt-dlp** - For downloading YouTube videos.
+- **Google API Client Library** - For interacting with YouTube Data API.
+- **Kaggle API** - For downloading datasets from Kaggle.
+
+### Installation Commands
+```bash
+!pip install pyspark
+!pip install delta-spark
+!pip install yt-dlp
+!pip install google-api-python-client
+!pip install kaggle
+```
+
+## Usage
+### Step 1: Setting Up Google Drive
+Mount your Google Drive to access the datasets and store processed files.
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
+### Step 2: Setting Up Delta Lake
+Initialize SparkSession with Delta Lake configuration.
+```python
+from pyspark.sql import SparkSession
+from delta import *
+
+builder = SparkSession.builder.appName("SoccerSense") \
+    .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
+    .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
+
+spark = configure_spark_with_delta_pip(builder).getOrCreate()
+```
+
+### Step 3: Installing Required Packages
+Make sure all the required packages are installed as listed above.
+
+### Step 4: Running Data Ingestion Scripts
+Refer to the code files provided in the repository for data ingestion processes including:
+- Downloading YouTube videos using `yt-dlp`
+- Extracting comments via YouTube Data API
+- Downloading CSV data from Kaggle
+- Storing data in Delta Lake (Temporal and Persistent Landing Zones)
+
+### Step 5: Metadata Management
+Metadata for each dataset is extracted and stored as JSON files for better traceability.
+
+### Step 6: Data Processing and Analysis
+Once all the data is stored, you can proceed with further processing and analysis using Spark DataFrames.
+
+## Repository Link
+[GitHub Repository](https://github.com/woshimajintao/BDM-Project)
+
+## Author
+**Jintao Ma** - Universitat Politècnica de Catalunya (UPC)
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 

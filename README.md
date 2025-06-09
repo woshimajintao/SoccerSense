@@ -55,34 +55,22 @@ pip install ultralytics
 ```
 
 ## Usage
-### Step 1: Setting Up Delta Lake
-Initialize SparkSession with Delta Lake configuration.
-```python
-from pyspark.sql import SparkSession
-from delta import *
+### Step 1: Clone the repository
+```bash
+git clone https://github.com/woshimajintao/SoccerSense.git
+cd SoccerSense
 
-builder = SparkSession.builder.appName("SoccerSense") \
-    .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
-    .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
-
-spark = configure_spark_with_delta_pip(builder).getOrCreate()
-```
 
 ### Step 2: Installing Required Packages
 Make sure all the required packages are installed as listed above.
 
-### Step 3: Running Data Ingestion Scripts
-Refer to the code files provided in the repository for data ingestion processes including:
-- Downloading YouTube videos using `yt-dlp`
-- Extracting comments via YouTube Data API
-- Downloading CSV data from Kaggle
-- Storing data in Delta Lake (Temporal and Persistent Landing Zones)
+### Run the Application
+Start the main Streamlit app:
 
-### Step 4: Metadata Management
-Metadata for each dataset is extracted and stored as JSON files like [this](https://drive.google.com/file/d/1-bpG7PXG4g9iOmyarzcFx6-lrkD2qp58/view?usp=sharing) for better traceability.
+```bash
+streamlit run app.py
+This will launch the application in your browser.
 
-### Step 5: Data Processing and Analysis
-Once all the data is stored, you can proceed with further processing and analysis using Spark DataFrames.
 
 ## Repository Link
 [GitHub Repository](https://github.com/woshimajintao/BDM-Project)

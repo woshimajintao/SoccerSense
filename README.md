@@ -128,6 +128,8 @@ This will launch the application in your browser.
 ### KPI Analytics
 ![image](https://github.com/user-attachments/assets/2f0bc762-7200-4ce2-8b28-d9233e2202d5)
 
+![KPI2](https://github.com/user-attachments/assets/00194bfc-91f4-4313-82b0-c169c9744843)
+
 ### Video Detection
 ![Video Detection](https://github.com/user-attachments/assets/95b47eb5-4ca3-4231-98b0-7bd60b55dc15)
 

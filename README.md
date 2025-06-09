@@ -4,13 +4,13 @@
 This project, **SoccerSense**, is a comprehensive soccer analytics platform that integrates multiple data sources, including structured CSV datasets, unstructured video data, and semi-structured JSON files. The primary goal is to address challenges in soccer analytics by providing automated data ingestion, advanced AI-driven analysis, and real-time insights for coaches, analysts, and scouts.
 ![image](https://github.com/user-attachments/assets/79cb1f26-a7e2-43d2-8541-e0f3353a19fc)
 
-### 🌐 0.Data Sources
+### 🌐 1.Data Sources
 Here I have used a variety of structured, semi-structured and unstructured data.
 #### Kaggle:https://www.kaggle.com/datasets/davidcariboo/player-scores
 #### Transfermarkt: https://www.transfermarkt.co.uk/
 #### Youtube: https://www.youtube.com/
 
-### 🗂️ 1. Landing Zone
+### 🗂️ 2. Landing Zone
 - **Temporal Landing Zone**  
   Stores raw data including:
   - CSVs (match/player stats)
@@ -24,7 +24,7 @@ Here I have used a variety of structured, semi-structured and unstructured data.
 
 
 
-### 🔐 2. Trusted Zone
+### 🔐 3. Trusted Zone
 - **PySpark** is used for:
   - Large-scale data cleaning and consistency checks
   - Video metadata processing
@@ -33,13 +33,13 @@ Here I have used a variety of structured, semi-structured and unstructured data.
 
 
 
-### 📈 3. Exploitation Zone
+### 📈 4. Exploitation Zone
 - KPIs (Key Performance Indicators) such as player performance and win rates are computed using **PySpark**
 - Results are saved in **Parquet** format for downstream consumption
 
 
 
-### 🧑‍💻 4. Consumption Zone
+### 🧑‍💻 5. Consumption Zone
 A **Streamlit** web application provides:
 
 - 🎥 **Video Detection Module**  

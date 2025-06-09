@@ -6,6 +6,7 @@ This project, **SoccerSense**, is a comprehensive soccer analytics platform that
 
 ## Final Product
 ![image](https://github.com/user-attachments/assets/7c90ae25-d9ca-4cca-a060-9d7b304aef50)
+This is the demo video and figures: https://drive.google.com/drive/folders/1uwOWW3hrIYRXy-AmMu_Qvts5WWMsAZGZ?usp=share_link
 
 
 ## Data Sources

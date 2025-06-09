@@ -4,32 +4,52 @@
 This project, **SoccerSense**, is a comprehensive soccer analytics platform that integrates multiple data sources, including structured CSV datasets, unstructured video data, and semi-structured JSON files. The primary goal is to address challenges in soccer analytics by providing automated data ingestion, advanced AI-driven analysis, and real-time insights for coaches, analysts, and scouts.
 ![image](https://github.com/user-attachments/assets/79cb1f26-a7e2-43d2-8541-e0f3353a19fc)
 
-My
-system architecture was designed to handle structured, semi￾structured, and unstructured football-related data from various
-sources such as Kaggle, YouTube APIs, and direct video down￾loads. 
+### 🗂️ 1. Landing Zone
+- **Temporal Landing Zone**  
+  Stores raw data including:
+  - CSVs (match/player stats)
+  - JSON (YouTube comments)
+  - MP4 (match videos)
 
-I began by ingesting data into a Temporal Landing Zone,
-where raw CSVs, JSON comments, and MP4 videos were stored
-temporarily. Using Delta Lake, I transferred the cleaned and
-validated data to a Persistent Landing Zone to ensure ACID￾compliant storage with metadata management.
+- **Persistent Landing Zone**  
+  Cleaned data is written using **Delta Lake** to support:
+  - ACID-compliant transactional storage
+  - Metadata management and schema enforcement
 
-In the Trusted Zone, I employed PySpark for large-scale data
-cleaning and consistency validation across player, club, and
-match-related tables, as well as for processing video metadata
-and parsing YouTube comments. Then the data was stored with
-Duckdb.
+---
 
-Cleaned data was then moved into the Exploitation Zone,
-where I derived key performance indicators (KPIs) using PyS￾park, and saved them in Parquet format.
+### 🔐 2. Trusted Zone
+- **PySpark** is used for:
+  - Large-scale data cleaning and consistency checks
+  - Video metadata processing
+  - Parsing and structuring YouTube comments
+- Data is stored in **DuckDB** for in-memory analytics
 
-For the Consumption Zone, I developed several interactive
-modules using Streamlit. The video detection module lever￾aged YOLOv8 to detect players and ball movement. The senti￾ment analysis module used VADER to classify YouTube com￾ments into emotional categories and visualize audience reac￾tions. The dashboard module, built with Streamlit and DuckDB,
-supported CSV uploads, in-memory SQL querying, and dy￾namic KPI visualizations using Matplotlib.
+---
 
-This end-to-end pipeline demonstrated a structured data flow
-with integrated analytical components, allowing for real-time
-interaction, visual insights, and flexible data consumption. It
-ensured data quality, scalability, and domain-specific applica￾bility for football tactical and sentiment analysis.
+### 📈 3. Exploitation Zone
+- KPIs (Key Performance Indicators) such as player performance and win rates are computed using **PySpark**
+- Results are saved in **Parquet** format for downstream consumption
+
+---
+
+### 🧑‍💻 4. Consumption Zone
+A **Streamlit** web application provides:
+
+- 🎥 **Video Detection Module**  
+  Uses **YOLOv8** to detect and track players and ball movement
+
+- 💬 **Sentiment Analysis Module**  
+  Applies **VADER** to classify YouTube comments by emotional tone
+
+- 📊 **KPI Dashboard Module**  
+  Built with **Streamlit + DuckDB**, enabling:
+  - CSV upload & table preview
+  - Custom SQL querying
+  - Dynamic visualization using **Matplotlib**
+
+---
+
 
 
 ## Final Product

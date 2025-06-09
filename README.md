@@ -6,18 +6,9 @@ This project, **SoccerSense**, is a comprehensive soccer analytics platform that
 
 ## Final Product
 ![image](https://github.com/user-attachments/assets/7c90ae25-d9ca-4cca-a060-9d7b304aef50)
-This is the demo video and figures: 
+These are the demo videos: 
 
 https://drive.google.com/drive/folders/1uwOWW3hrIYRXy-AmMu_Qvts5WWMsAZGZ?usp=share_link
-
-### KPI Analytics
-![image](https://github.com/user-attachments/assets/2f0bc762-7200-4ce2-8b28-d9233e2202d5)
-
-### Video Detection
-![Video Detection](https://github.com/user-attachments/assets/95b47eb5-4ca3-4231-98b0-7bd60b55dc15)
-
-### Sentiment Analytics
-![Sentiment Analysis](https://github.com/user-attachments/assets/4b6998f9-146a-4c90-8bd1-5609040e3ebb)
 
 
 ## Data Sources
@@ -83,6 +74,16 @@ Start the main Streamlit app:
 streamlit run main.py
 ```
 This will launch the application in your browser.
+
+## Figures
+### KPI Analytics
+![image](https://github.com/user-attachments/assets/2f0bc762-7200-4ce2-8b28-d9233e2202d5)
+
+### Video Detection
+![Video Detection](https://github.com/user-attachments/assets/95b47eb5-4ca3-4231-98b0-7bd60b55dc15)
+
+### Sentiment Analytics
+![Sentiment Analysis](https://github.com/user-attachments/assets/4b6998f9-146a-4c90-8bd1-5609040e3ebb)
 
 
 ## Repository Link

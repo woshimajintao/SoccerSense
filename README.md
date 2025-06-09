@@ -16,20 +16,38 @@ Here I have used a variety of structured, semi-structured and unstructured data.
 ## Installation
 To run the code for this project, you will need to install several Python packages.
 
-### Required Packages
+### Main Packages
 - **PySpark** - For distributed data processing.
 - **Delta Lake** - To enable ACID transactions and schema enforcement with Spark.
 - **yt-dlp** - For downloading YouTube videos.
 - **Google API Client Library** - For interacting with YouTube Data API.
 - **Kaggle API** - For downloading datasets from Kaggle.
+- **Duckdb** – An in-process SQL OLAP database optimized for analytics.
+- **ultralytics (YOLO)** – For loading pretrained YOLO models (e.g., YOLOv5, YOLOv8).
+- **Streamlit** – For building interactive data apps and dashboards.
+- **VADER Sentiment (vaderSentiment)** – A lexicon-based sentiment analysis tool.
 
 ### Installation Commands
 ```bash
-!pip install pyspark
-!pip install delta-spark
-!pip install yt-dlp
-!pip install google-api-python-client
-!pip install kaggle
+# Core data processing and storage
+pip install pyspark
+pip install delta-spark
+
+# YouTube and API interaction
+pip install yt-dlp
+pip install google-api-python-client
+
+# External data access
+pip install kaggle
+
+# Additional analytics tools
+pip install duckdb
+pip install streamlit
+pip install vaderSentiment
+
+# YOLO pretrained models (via Ultralytics)
+pip install ultralytics
+
 ```
 
 ## Usage

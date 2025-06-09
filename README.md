@@ -4,6 +4,12 @@
 This project, **SoccerSense**, is a comprehensive soccer analytics platform that integrates multiple data sources, including structured CSV datasets, unstructured video data, and semi-structured JSON files. The primary goal is to address challenges in soccer analytics by providing automated data ingestion, advanced AI-driven analysis, and real-time insights for coaches, analysts, and scouts.
 ![image](https://github.com/user-attachments/assets/79cb1f26-a7e2-43d2-8541-e0f3353a19fc)
 
+### 🌐 0.Data Sources
+Here I have used a variety of structured, semi-structured and unstructured data.
+#### Kaggle:https://www.kaggle.com/datasets/davidcariboo/player-scores
+#### Transfermarkt: https://www.transfermarkt.co.uk/
+#### Youtube: https://www.youtube.com/
+
 ### 🗂️ 1. Landing Zone
 - **Temporal Landing Zone**  
   Stores raw data including:
@@ -59,11 +65,6 @@ These are the demo videos:
 https://drive.google.com/drive/folders/1uwOWW3hrIYRXy-AmMu_Qvts5WWMsAZGZ?usp=share_link
 
 
-## Data Sources
-Here I have used a variety of structured, semi-structured and unstructured data.
-#### Kaggle:https://www.kaggle.com/datasets/davidcariboo/player-scores
-#### Transfermarkt: https://www.transfermarkt.co.uk/
-#### Youtube: https://www.youtube.com/
 
 
 ## Installation

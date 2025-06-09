@@ -10,6 +10,15 @@ This is the demo video and figures:
 
 https://drive.google.com/drive/folders/1uwOWW3hrIYRXy-AmMu_Qvts5WWMsAZGZ?usp=share_link
 
+### KPI Analytics
+![image](https://github.com/user-attachments/assets/2f0bc762-7200-4ce2-8b28-d9233e2202d5)
+
+### Video Detection
+![Video Detection](https://github.com/user-attachments/assets/95b47eb5-4ca3-4231-98b0-7bd60b55dc15)
+
+### Sentiment Analytics
+![Sentiment Analysis](https://github.com/user-attachments/assets/4b6998f9-146a-4c90-8bd1-5609040e3ebb)
+
 
 ## Data Sources
 Here I have used a variety of structured, semi-structured and unstructured data.

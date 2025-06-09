@@ -58,8 +58,8 @@ pip install ultralytics
 ### Step 1: Clone the repository
 ```bash
 git clone https://github.com/woshimajintao/SoccerSense.git
-cd SoccerSense
-
+cd P2-APP
+```
 
 ### Step 2: Installing Required Packages
 Make sure all the required packages are installed as listed above.
@@ -68,7 +68,8 @@ Make sure all the required packages are installed as listed above.
 Start the main Streamlit app:
 
 ```bash
-streamlit run app.py
+streamlit run main.py
+```
 This will launch the application in your browser.
 
 

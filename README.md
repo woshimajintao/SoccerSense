@@ -16,7 +16,7 @@ This project, **SoccerSense**, is a comprehensive soccer analytics platform that
   - ACID-compliant transactional storage
   - Metadata management and schema enforcement
 
----
+
 
 ### 🔐 2. Trusted Zone
 - **PySpark** is used for:
@@ -25,13 +25,13 @@ This project, **SoccerSense**, is a comprehensive soccer analytics platform that
   - Parsing and structuring YouTube comments
 - Data is stored in **DuckDB** for in-memory analytics
 
----
+
 
 ### 📈 3. Exploitation Zone
 - KPIs (Key Performance Indicators) such as player performance and win rates are computed using **PySpark**
 - Results are saved in **Parquet** format for downstream consumption
 
----
+
 
 ### 🧑‍💻 4. Consumption Zone
 A **Streamlit** web application provides:
@@ -48,7 +48,7 @@ A **Streamlit** web application provides:
   - Custom SQL querying
   - Dynamic visualization using **Matplotlib**
 
----
+
 
 
 

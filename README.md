@@ -4,6 +4,8 @@
 This project, **SoccerSense**, is a comprehensive soccer analytics platform that integrates multiple data sources, including structured CSV datasets, unstructured video data, and semi-structured JSON files. The primary goal is to address challenges in soccer analytics by providing automated data ingestion, advanced AI-driven analysis, and real-time insights for coaches, analysts, and scouts.
 ![image](https://github.com/user-attachments/assets/79cb1f26-a7e2-43d2-8541-e0f3353a19fc)
 
+## Final Product
+![image](https://github.com/user-attachments/assets/7c90ae25-d9ca-4cca-a060-9d7b304aef50)
 
 
 ## Data Sources

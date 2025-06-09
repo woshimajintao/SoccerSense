@@ -58,7 +58,7 @@ pip install ultralytics
 ### Step 1: Clone the repository
 ```bash
 git clone https://github.com/woshimajintao/SoccerSense.git
-cd P2-APP
+cd SoccerSense/P2/Final_APP/Consumption\ Zone
 ```
 
 ### Step 2: Installing Required Packages

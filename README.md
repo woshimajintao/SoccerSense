@@ -31,6 +31,7 @@ with integrated analytical components, allowing for real-time
 interaction, visual insights, and flexible data consumption. It
 ensured data quality, scalability, and domain-specific applica￾bility for football tactical and sentiment analysis.
 
+
 ## Final Product
 ![image](https://github.com/user-attachments/assets/7c90ae25-d9ca-4cca-a060-9d7b304aef50)
 These are the demo videos: 

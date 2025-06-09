@@ -1,0 +1,8 @@
+Trusted Zone ensured data quality through schema valida￾tion, metadata tracking, and deduplication, integrating video
+metadata extraction and JSON normalization alongside struc￾tured data cleaning.
+
+Exploitation Zone transformed cleaned datasets into domain￾specific analytics, including key performance indicators (KPIs),
+player performance rankings, and club statistics, powered by PySpark and visualized with Matplotlib.
+
+Consumption Zone provided real-time interaction via the Streamlit-DuckDB dashboard, integrated YOLOv8 video de￾tection for tactical analysis, and conducted sentiment analysis
+on YouTube comments using VADER.
